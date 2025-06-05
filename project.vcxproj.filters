@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Pliki źródłowe">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Pliki zasobów">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="src\screens.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="src\classes.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utility.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="src\window.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="src\events.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\classes.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="include\screens.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="include\variables.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utility.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="include\window.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="include\events.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\background.jpg">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="Resources\button.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="Resources\button_new_game.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="Resources\button_continue.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="Resources\images\knight\idle.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="Resources\images\archer\idle.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="Resources\images\wizard\idle.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\ui\silver.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\ui\gold.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\ui\button.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\ui\bronze.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\ui\background.jpg">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\ui\back.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\ui\app_name.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\heroes\wizard\idle.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\heroes\knight\idle.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\heroes\archer\idle.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\enemies\fire_worm\idle.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\enemies\goblin\idle.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\enemies\skeleton\idle.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\enemies\mushroom\idle.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\enemies\shadow_warrior\idle.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\enemies\necromancer\idle.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\enemies\death\idle.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\ui\battle.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\ui\fight_button.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\heroes\knight\attack.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\heroes\knight\HURT.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\enemies\goblin\hurt.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\enemies\goblin\die.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\enemies\goblin\attack.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\enemies\fire_worm\attack.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\enemies\fire_worm\die.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\enemies\fire_worm\hurt.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\enemies\skeleton\attack.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\enemies\skeleton\die.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\enemies\skeleton\hurt.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\enemies\mushroom\attack.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\enemies\mushroom\die.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\enemies\mushroom\hurt.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\enemies\shadow_warrior\hurt.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\enemies\shadow_warrior\die.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\enemies\shadow_warrior\attack.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\enemies\necromancer\attack.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\enemies\necromancer\die.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\enemies\necromancer\hurt.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\enemies\minotaur\attack.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\enemies\minotaur\die.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\enemies\minotaur\hurt.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\enemies\minotaur\idle.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\heroes\wizard\attack.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\heroes\wizard\die.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\heroes\wizard\hurt.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\heroes\archer\attack.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\heroes\archer\die.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="resources\images\heroes\archer\hurt.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="resources\fonts\NewRocker-Regular.ttf" />
+    <Font Include="resources\fonts\Lato-Regular.ttf" />
+    <Font Include="resources\fonts\Lato-Light.ttf" />
+    <Font Include="resources\fonts\Lato-Bold.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="saves\saves.txt" />
+  </ItemGroup>
+</Project>

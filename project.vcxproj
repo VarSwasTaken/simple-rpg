@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{060ffe05-2e81-4ba1-b7a5-91c84cae197e}</ProjectGuid>
+    <RootNamespace>project</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)external\SFML\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)external\SFML\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\SFML\include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\SFML\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;sfml-system.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\classes.cpp" />
+    <ClCompile Include="src\events.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\screens.cpp" />
+    <ClCompile Include="src\utility.cpp" />
+    <ClCompile Include="src\window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\classes.h" />
+    <ClInclude Include="include\events.h" />
+    <ClInclude Include="include\screens.h" />
+    <ClInclude Include="include\utility.h" />
+    <ClInclude Include="include\variables.h" />
+    <ClInclude Include="include\window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\background.jpg" />
+    <Image Include="Resources\button.png" />
+    <Image Include="Resources\button_continue.png" />
+    <Image Include="Resources\button_new_game.png" />
+    <Image Include="Resources\images\archer\idle.png" />
+    <Image Include="resources\images\enemies\death\idle.png" />
+    <Image Include="resources\images\enemies\fire_worm\attack.png" />
+    <Image Include="resources\images\enemies\fire_worm\die.png" />
+    <Image Include="resources\images\enemies\fire_worm\hurt.png" />
+    <Image Include="resources\images\enemies\fire_worm\idle.png" />
+    <Image Include="resources\images\enemies\goblin\attack.png" />
+    <Image Include="resources\images\enemies\goblin\die.png" />
+    <Image Include="resources\images\enemies\goblin\hurt.png" />
+    <Image Include="resources\images\enemies\goblin\idle.png" />
+    <Image Include="resources\images\enemies\minotaur\attack.png" />
+    <Image Include="resources\images\enemies\minotaur\die.png" />
+    <Image Include="resources\images\enemies\minotaur\hurt.png" />
+    <Image Include="resources\images\enemies\minotaur\idle.png" />
+    <Image Include="resources\images\enemies\mushroom\attack.png" />
+    <Image Include="resources\images\enemies\mushroom\die.png" />
+    <Image Include="resources\images\enemies\mushroom\hurt.png" />
+    <Image Include="resources\images\enemies\mushroom\idle.png" />
+    <Image Include="resources\images\enemies\necromancer\attack.png" />
+    <Image Include="resources\images\enemies\necromancer\die.png" />
+    <Image Include="resources\images\enemies\necromancer\hurt.png" />
+    <Image Include="resources\images\enemies\necromancer\idle.png" />
+    <Image Include="resources\images\enemies\shadow_warrior\attack.png" />
+    <Image Include="resources\images\enemies\shadow_warrior\die.png" />
+    <Image Include="resources\images\enemies\shadow_warrior\hurt.png" />
+    <Image Include="resources\images\enemies\shadow_warrior\idle.png" />
+    <Image Include="resources\images\enemies\skeleton\attack.png" />
+    <Image Include="resources\images\enemies\skeleton\die.png" />
+    <Image Include="resources\images\enemies\skeleton\hurt.png" />
+    <Image Include="resources\images\enemies\skeleton\idle.png" />
+    <Image Include="resources\images\heroes\archer\attack.png" />
+    <Image Include="resources\images\heroes\archer\die.png" />
+    <Image Include="resources\images\heroes\archer\hurt.png" />
+    <Image Include="resources\images\heroes\archer\idle.png" />
+    <Image Include="resources\images\heroes\knight\attack.png" />
+    <Image Include="resources\images\heroes\knight\HURT.png" />
+    <Image Include="resources\images\heroes\knight\idle.png" />
+    <Image Include="resources\images\heroes\wizard\attack.png" />
+    <Image Include="resources\images\heroes\wizard\die.png" />
+    <Image Include="resources\images\heroes\wizard\hurt.png" />
+    <Image Include="resources\images\heroes\wizard\idle.png" />
+    <Image Include="Resources\images\knight\idle.png" />
+    <Image Include="resources\images\ui\app_name.png" />
+    <Image Include="resources\images\ui\back.png" />
+    <Image Include="resources\images\ui\background.jpg" />
+    <Image Include="resources\images\ui\battle.png" />
+    <Image Include="resources\images\ui\bronze.png" />
+    <Image Include="resources\images\ui\button.png" />
+    <Image Include="resources\images\ui\fight_button.png" />
+    <Image Include="resources\images\ui\gold.png" />
+    <Image Include="resources\images\ui\silver.png" />
+    <Image Include="Resources\images\wizard\idle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="resources\fonts\Lato-Bold.ttf" />
+    <Font Include="resources\fonts\Lato-Light.ttf" />
+    <Font Include="resources\fonts\Lato-Regular.ttf" />
+    <Font Include="resources\fonts\NewRocker-Regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="saves\saves.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
